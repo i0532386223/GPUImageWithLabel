@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F5J-td-Nei">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Video RecordVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GPUImageWithLabel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="videoRecordVC" customModule="GPUImageWithLabel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
                                     <color key="titleColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </state>
                                 <connections>
-                                    <action selector="actRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zya-xS-KFn"/>
+                                    <action selector="actRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yq1-NA-o9h"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -40,11 +40,121 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="5Gy-pP-IBO"/>
                     <connections>
-                        <outlet property="btnRecord" destination="85I-Kp-uSJ" id="Wkk-6z-hNK"/>
+                        <outlet property="btnRecord" destination="85I-Kp-uSJ" id="RG5-zu-OZl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="115.59220389805098"/>
+        </scene>
+        <!--SelectVC-->
+        <scene sceneID="LY3-hh-agC">
+            <objects>
+                <viewController id="xaE-bt-BKS" customClass="selectVC" customModule="GPUImageWithLabel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QEK-td-If7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dV2-Mz-6r6">
+                                <rect key="frame" x="83.5" y="135" width="208" height="55"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="0.80734592009999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="Fu2-pe-9Q9"/>
+                                    <constraint firstAttribute="height" constant="55" id="PJy-TK-nmE"/>
+                                </constraints>
+                                <state key="normal" title="Record video">
+                                    <color key="titleColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ixG-a8-RU8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOF-Fe-IPK">
+                                <rect key="frame" x="83.5" y="259" width="208" height="55"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="0.80734592009999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="VcQ-LN-hpG"/>
+                                    <constraint firstAttribute="height" constant="55" id="xeM-lG-oD1"/>
+                                </constraints>
+                                <state key="normal" title="Processing  video">
+                                    <color key="titleColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <segue destination="nqc-GZ-WG0" kind="show" id="bRR-yE-Yj5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EOF-Fe-IPK" firstAttribute="top" secondItem="dV2-Mz-6r6" secondAttribute="bottom" constant="69" id="1Jg-UU-j0o"/>
+                            <constraint firstItem="dV2-Mz-6r6" firstAttribute="centerX" secondItem="QEK-td-If7" secondAttribute="centerX" id="HxT-5b-fNJ"/>
+                            <constraint firstItem="dV2-Mz-6r6" firstAttribute="top" secondItem="mic-fN-mKa" secondAttribute="top" constant="71" id="hwF-nI-wt2"/>
+                            <constraint firstItem="EOF-Fe-IPK" firstAttribute="centerX" secondItem="QEK-td-If7" secondAttribute="centerX" id="xcE-iL-DTQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mic-fN-mKa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ath-fG-3ZT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sf4-5R-SWk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="893"/>
+        </scene>
+        <!--Video ProcessingVC-->
+        <scene sceneID="dVG-Dm-gUM">
+            <objects>
+                <viewController id="nqc-GZ-WG0" customClass="videoProcessingVC" customModule="GPUImageWithLabel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D0l-bH-ho6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LA2-rH-Ud6">
+                                <rect key="frame" x="110" y="126" width="155" height="73"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="JFT-Rb-wZ7"/>
+                                    <constraint firstAttribute="height" constant="73" id="h5a-n7-v5i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                <state key="normal" title="Processing">
+                                    <color key="titleColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="actProcessing:" destination="nqc-GZ-WG0" eventType="touchUpInside" id="vKE-e8-uK5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LA2-rH-Ud6" firstAttribute="centerX" secondItem="D0l-bH-ho6" secondAttribute="centerX" id="Nn4-1c-D8C"/>
+                            <constraint firstItem="LA2-rH-Ud6" firstAttribute="top" secondItem="5n9-pH-CX5" secondAttribute="top" constant="62" id="bVU-Vw-rkl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5n9-pH-CX5"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnProcessing" destination="LA2-rH-Ud6" id="saE-78-W4E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1AV-0n-MTB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="893"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CS5-7o-DXS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F5J-td-Nei" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LfB-Qe-bPZ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xaE-bt-BKS" kind="relationship" relationship="rootViewController" id="Cc5-b9-YGW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bnv-oM-748" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="115.59220389805098"/>
         </scene>
