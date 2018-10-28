@@ -18,7 +18,7 @@
 		320EC19A21846AC4002C53B8 /* mycat.png in Resources */ = {isa = PBXBuildFile; fileRef = 320EC19921846AC4002C53B8 /* mycat.png */; };
 		320EC1E42185CA02002C53B8 /* selectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320EC1E32185CA02002C53B8 /* selectVC.swift */; };
 		320EC1E62185CA87002C53B8 /* videoProcessingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320EC1E52185CA87002C53B8 /* videoProcessingVC.swift */; };
-		320EC1E821860481002C53B8 /* old.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320EC1E721860481002C53B8 /* old.swift */; };
+		320EC1E821860481002C53B8 /* old.swift.txt in Sources */ = {isa = PBXBuildFile; fileRef = 320EC1E721860481002C53B8 /* old.swift.txt */; };
 		37422A98BD797D9AC54CAB59 /* Pods_GPUImageWithLabelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA97017751171F580EA91484 /* Pods_GPUImageWithLabelTests.framework */; };
 		A7D98D76F9EC2B17E0D7BCC2 /* Pods_GPUImageWithLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28070382D6EECACB084D2EC /* Pods_GPUImageWithLabel.framework */; };
 		F0598A459A565EA194388F7F /* Pods_GPUImageWithLabelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D70867A7A4F964DE6B386A2 /* Pods_GPUImageWithLabelUITests.framework */; };
@@ -61,7 +61,7 @@
 		320EC19921846AC4002C53B8 /* mycat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mycat.png; sourceTree = "<group>"; };
 		320EC1E32185CA02002C53B8 /* selectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectVC.swift; sourceTree = "<group>"; };
 		320EC1E52185CA87002C53B8 /* videoProcessingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoProcessingVC.swift; sourceTree = "<group>"; };
-		320EC1E721860481002C53B8 /* old.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = old.swift; sourceTree = "<group>"; };
+		320EC1E721860481002C53B8 /* old.swift.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = old.swift.txt; sourceTree = "<group>"; };
 		355E75A4E4214AA1146E24C6 /* Pods-GPUImageWithLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImageWithLabel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPUImageWithLabel/Pods-GPUImageWithLabel.debug.xcconfig"; sourceTree = "<group>"; };
 		6B94A8C48D3614E50EE6F54E /* Pods-GPUImageWithLabelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImageWithLabelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPUImageWithLabelTests/Pods-GPUImageWithLabelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C8749CAEA6476FC905E67FF /* Pods-GPUImageWithLabelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImageWithLabelUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPUImageWithLabelUITests/Pods-GPUImageWithLabelUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 				320EC16921846740002C53B8 /* GPUImageWithLabel.xcdatamodeld */,
 				320EC1E32185CA02002C53B8 /* selectVC.swift */,
 				320EC1E52185CA87002C53B8 /* videoProcessingVC.swift */,
-				320EC1E721860481002C53B8 /* old.swift */,
+				320EC1E721860481002C53B8 /* old.swift.txt */,
 			);
 			path = GPUImageWithLabel;
 			sourceTree = "<group>";
@@ -408,7 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				320EC1E62185CA87002C53B8 /* videoProcessingVC.swift in Sources */,
-				320EC1E821860481002C53B8 /* old.swift in Sources */,
+				320EC1E821860481002C53B8 /* old.swift.txt in Sources */,
 				320EC16521846740002C53B8 /* videoRecordVC.swift in Sources */,
 				320EC16B21846740002C53B8 /* GPUImageWithLabel.xcdatamodeld in Sources */,
 				320EC1E42185CA02002C53B8 /* selectVC.swift in Sources */,
